@@ -119,6 +119,86 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1001 &247004405
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 2919116957122212826, guid: 0c98f994f7df1f849858fd2d6de9b731, type: 3}
+      propertyPath: m_Name
+      value: Sparrow (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5522063727655563455, guid: 0c98f994f7df1f849858fd2d6de9b731, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -8.16
+      objectReference: {fileID: 0}
+    - target: {fileID: 5522063727655563455, guid: 0c98f994f7df1f849858fd2d6de9b731, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 4.26
+      objectReference: {fileID: 0}
+    - target: {fileID: 5522063727655563455, guid: 0c98f994f7df1f849858fd2d6de9b731, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 5.47
+      objectReference: {fileID: 0}
+    - target: {fileID: 5522063727655563455, guid: 0c98f994f7df1f849858fd2d6de9b731, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5522063727655563455, guid: 0c98f994f7df1f849858fd2d6de9b731, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5522063727655563455, guid: 0c98f994f7df1f849858fd2d6de9b731, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5522063727655563455, guid: 0c98f994f7df1f849858fd2d6de9b731, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5522063727655563455, guid: 0c98f994f7df1f849858fd2d6de9b731, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5522063727655563455, guid: 0c98f994f7df1f849858fd2d6de9b731, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 180
+      objectReference: {fileID: 0}
+    - target: {fileID: 5522063727655563455, guid: 0c98f994f7df1f849858fd2d6de9b731, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 2919116957122212826, guid: 0c98f994f7df1f849858fd2d6de9b731, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 247004407}
+  m_SourcePrefab: {fileID: 100100000, guid: 0c98f994f7df1f849858fd2d6de9b731, type: 3}
+--- !u!1 &247004406 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2919116957122212826, guid: 0c98f994f7df1f849858fd2d6de9b731, type: 3}
+  m_PrefabInstance: {fileID: 247004405}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &247004407
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 247004406}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7c05c22b9a5004d9b84a48a57d4f93dd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Bird
+  _popUpTime: 0.5
+  _popUpSpeed: 3
+  _player: {fileID: 8264938254608900087}
 --- !u!1 &330585543
 GameObject:
   m_ObjectHideFlags: 0
@@ -395,9 +475,13 @@ PrefabInstance:
       propertyPath: m_Name
       value: Sparrow_Start
       objectReference: {fileID: 0}
+    - target: {fileID: 2919116957122212826, guid: 0c98f994f7df1f849858fd2d6de9b731, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5522063727655563455, guid: 0c98f994f7df1f849858fd2d6de9b731, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -5.75
+      value: -5.59
       objectReference: {fileID: 0}
     - target: {fileID: 5522063727655563455, guid: 0c98f994f7df1f849858fd2d6de9b731, type: 3}
       propertyPath: m_LocalPosition.y
@@ -438,31 +522,8 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 2919116957122212826, guid: 0c98f994f7df1f849858fd2d6de9b731, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 710031261}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0c98f994f7df1f849858fd2d6de9b731, type: 3}
---- !u!1 &710031260 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 2919116957122212826, guid: 0c98f994f7df1f849858fd2d6de9b731, type: 3}
-  m_PrefabInstance: {fileID: 710031259}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &710031261
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 710031260}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7c05c22b9a5004d9b84a48a57d4f93dd, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::Bird
-  _popUpTime: 1
-  _popUpSpeed: 5
-  _player: {fileID: 0}
 --- !u!1001 &792856141
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -540,9 +601,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7c05c22b9a5004d9b84a48a57d4f93dd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Bird
-  _popUpTime: 1
-  _popUpSpeed: 5
-  _player: {fileID: 0}
+  _popUpTime: 0.5
+  _popUpSpeed: 3
+  _player: {fileID: 8264938254608900087}
 --- !u!1 &832575517
 GameObject:
   m_ObjectHideFlags: 0
@@ -669,9 +730,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7c05c22b9a5004d9b84a48a57d4f93dd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Bird
-  _popUpTime: 1
-  _popUpSpeed: 5
-  _player: {fileID: 0}
+  _popUpTime: 0.5
+  _popUpSpeed: 3
+  _player: {fileID: 8264938254608900087}
 --- !u!1001 &1089528898
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -749,9 +810,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7c05c22b9a5004d9b84a48a57d4f93dd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Bird
-  _popUpTime: 1
-  _popUpSpeed: 5
-  _player: {fileID: 0}
+  _popUpTime: 0.5
+  _popUpSpeed: 3
+  _player: {fileID: 8264938254608900087}
 --- !u!1 &1226188282
 GameObject:
   m_ObjectHideFlags: 0
@@ -941,9 +1002,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7c05c22b9a5004d9b84a48a57d4f93dd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Bird
-  _popUpTime: 1
-  _popUpSpeed: 5
-  _player: {fileID: 0}
+  _popUpTime: 0.5
+  _popUpSpeed: 3
+  _player: {fileID: 8264938254608900087}
 --- !u!1 &440282505672819293
 GameObject:
   m_ObjectHideFlags: 0
@@ -1298,13 +1359,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 00e2bfb94b64b4823bfefa2fa809acd7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::TreeOfBirds
-  Sparrow:
+  _bird:
   - {fileID: 1631012853}
   - {fileID: 1089528900}
   - {fileID: 792856143}
   - {fileID: 977150478}
-  _player: {fileID: 0}
-  interactionDistance: 0
+  - {fileID: 247004407}
+  _player: {fileID: 2617393310032840078}
+  interactionDistance: 1
 --- !u!1 &3822005831893177564
 GameObject:
   m_ObjectHideFlags: 0
@@ -1643,7 +1705,7 @@ MonoBehaviour:
   _moveSpeed: 5
   _mouseSensitivity: 10
   _throwForce: 2
-  _isHoldingSeed: 0
+  _isHoldingSeed: 1
 --- !u!1 &9103071186148510458
 GameObject:
   m_ObjectHideFlags: 0
@@ -1674,3 +1736,4 @@ SceneRoots:
   - {fileID: 1089528898}
   - {fileID: 792856141}
   - {fileID: 977150476}
+  - {fileID: 247004405}

@@ -9,7 +9,7 @@ public class Player : MonoBehaviour
     [SerializeField] private float _moveSpeed;
     [SerializeField] private float _mouseSensitivity;
     [SerializeField] private float _throwForce = 5.0f;
-
+   
     public bool _isHoldingSeed;
 
     private Transform _cameraTrans;

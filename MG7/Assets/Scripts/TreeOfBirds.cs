@@ -24,7 +24,7 @@ public class TreeOfBirds : MonoBehaviour
             Bird bird = _bird[i];
             if (Vector3.Distance(bird.transform.position, _player.position) <= interactionDistance)
             {
-                gameObject.SetActive(true);
+                bird.gameObject.SetActive(true);
 
             }
             

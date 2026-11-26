@@ -1,3 +1,4 @@
+using UnityEditor.Overlays;
 using UnityEngine;
 
 public class Player : MonoBehaviour
@@ -52,7 +53,7 @@ public class Player : MonoBehaviour
         // Fix this line so that the Player GameObject is the PARENT of the seed.
         // That way, the seed will move with the player.
 
-        GameObject seed = Instantiate(_seedPrefab);
+        GameObject seed = Instantiate(_seedPrefab, transform.position, Quaternion.identity);
 
         // STEP 4 -------------------------------------------------------------
 
@@ -67,7 +68,8 @@ public class Player : MonoBehaviour
         //      left and slightly above the player.
         // You will probably also need Transform.TransformDirection() ;)
 
-        
+         
+
         // STEP 5 -------------------------------------------------------------
     }
     
@@ -75,7 +77,7 @@ public class Player : MonoBehaviour
     private void ThrowSeed ()
     {
         _isHoldingSeed = false;
-        _seedRB.isKinematic = false;
+        _seedRB.isKinematic = false; //contingent
         _seedCollider.enabled = true;
 
         Vector3 throwDirection =

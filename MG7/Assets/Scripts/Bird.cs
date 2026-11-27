@@ -7,6 +7,8 @@ public class Bird : MonoBehaviour
     [SerializeField] private float _popUpSpeed = 5.0f;
     [SerializeField] private Player _player;
 
+    public bool _isHoldingSeed;
+    public Transform target;
     private bool _doPopUpAnimation;
     private float _popUpTimeRemaining;
 
@@ -28,7 +30,7 @@ public class Bird : MonoBehaviour
     {
         _popUpTimeRemaining = _popUpTime;
         _doPopUpAnimation = true;
-       
+
     }
     // STEP 2 -----------------------------------------------------------------
 
@@ -51,25 +53,34 @@ public class Bird : MonoBehaviour
                 //gameObject.SetActive(false);
                 _doPopUpAnimation = false;
             }
-        }     
-        
-        // STEP 3 -------------------------------------------------------------
+
+            if (_isHoldingSeed == true)
+            {
+
+               
+
+                transform.LookAt(target);
+
+            }
+
+            // STEP 3 -------------------------------------------------------------
 
 
 
-        // STEP 6 -------------------------------------------------------------
-        // Check if the player is currently holding a seed by checking the value
-        //      of Player._isHoldingSeed.
-        // If the player is holding a seed, make the bird look at the player
-        //      with the Transform.LookAt() method:
-        //      https://docs.unity3d.com/6000.2/Documentation/ScriptReference/Transform.LookAt.html
-
-        /// if (Player._isHoldingSeed = true)
-        /// {
+            // STEP 6 -------------------------------------------------------------
+            // Check if the player is currently holding a seed by checking the value
+            //      of Player._isHoldingSeed.
+            // If the player is holding a seed, make the bird look at the player
+            //      with the Transform.LookAt() method:
+            //      https://docs.unity3d.com/6000.2/Documentation/ScriptReference/Transform.LookAt.html
 
 
-        ///}
 
-        // STEP 6 -------------------------------------------------------------
+
+
+
+
+            // STEP 6 -------------------------------------------------------------
+        }
     }
 }

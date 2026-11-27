@@ -1,4 +1,4 @@
-using UnityEditor.Overlays;
+
 using UnityEngine;
 
 public class Player : MonoBehaviour
@@ -68,7 +68,11 @@ public class Player : MonoBehaviour
         //      left and slightly above the player.
         // You will probably also need Transform.TransformDirection() ;)
 
-         
+        _spawnLeft = Input.GetAxis("Horizontal");
+        transform.TransformDirection(Vector3.left);
+
+        _spawnUp = Input.GetAxis("Vertical");
+        transform.TransformDirection(Vector3.up);
 
         // STEP 5 -------------------------------------------------------------
     }
@@ -77,7 +81,7 @@ public class Player : MonoBehaviour
     private void ThrowSeed ()
     {
         _isHoldingSeed = false;
-        _seedRB.isKinematic = false; //contingent
+        _seedRB.isKinematic = false; 
         _seedCollider.enabled = true;
 
         Vector3 throwDirection =
@@ -122,6 +126,7 @@ public class Player : MonoBehaviour
         // Set the animation parameters to play the walking animation.
         // You might need the mouseY, mouseX, vertical, and horizontal variables
         //      that are above this step :)
+
 
 
         // STEP 8 -------------------------------------------------------------
